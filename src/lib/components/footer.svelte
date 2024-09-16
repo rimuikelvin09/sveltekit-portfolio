@@ -279,9 +279,7 @@
         &:hover
             transform: scale(1.1)
 
-.social-media-icons
-        justify-content: center
-        margin-bottom: 3vh
+
 
 @media only screen and (max-width: 950px)
    
