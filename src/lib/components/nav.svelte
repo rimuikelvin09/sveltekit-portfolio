@@ -59,7 +59,7 @@
 			<button class="interactive clickable"
 				on:click={() => navigate($homeAnchor)}>
 
-				<img src="assets/imgs/logo.svg"
+				<img src="assets/imgs/alphalogo.png"
 					class="logo-icon"
 					alt="Logo"
 					draggable="false"
@@ -97,10 +97,10 @@
 							</button>
 						</li>
 						<li class="mobile">
-							<a href="mailto:musabhassan04@gmail.com" target="_blank" in:mobileTransitionSwitcher={{ delay: 350 }}>Email</a>
+							<a href="mailto:rimuikelvin4@gmail.com" target="_blank" in:mobileTransitionSwitcher={{ delay: 350 }}>Email</a>
 						</li>
 						<li use:introAnimation={{ delay: 1300 }}>
-							<a href="https://github.com/Musab-Hassan" target="_blank" in:mobileTransitionSwitcher={{ delay: 400 }}>Github</a>
+							<a href="https://github.com/rimuikelvin09" target="_blank" in:mobileTransitionSwitcher={{ delay: 400 }}>Github</a>
 						</li>
 					{/key}
 				</ul>
@@ -163,6 +163,7 @@ button.interactive
 			display: inline-block
 			height: 100%
 			width: 100%
+			object-fit: cover
 
 	@media only screen and (min-width: 950px)
 		ul.nav-list

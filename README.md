@@ -1,6 +1,6 @@
 # <img src="banner.jpg" align="center" alt="banner"/>
 
-Source code for my personal portfolio, musabhassan.com
+Source code for my personal portfolio, alphainsights.co.ke
 
 [![Visit Live Site](https://img.shields.io/badge/Visit%20Live%20Site-222224?style=for-the-badge)](https://musabhassan.com)
 

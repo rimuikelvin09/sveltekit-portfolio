@@ -48,24 +48,33 @@
 	{#await sectionOnePromise then _}
 		<div class="content-wrapper">
 			<h1 class="title" use:titleIn>
-				Hey I'm <br>Musab
+				Meet <br>Kelvin 
 			</h1>
 			<div in:maskSlideIn={{ duration: 1200, reverse: true, delay: 150 }}>
 				<p class="paragraph">
-					I'm a web developer from British Columbia, Canada. I specialize in designing and developing web experiences<br><br>I work with organizations and individuals to create beautiful, responsive, and scalable web products tailor-made for them. Think we can make something great together? Let's talk over email.
+					As an IT enthusiast, I am passionate about leveraging technology to address both business and humanitarian challenges. My goal is to implement efficient, cost-effective solutions that drive positive change and sustainable growth.<br><br>
+					Throughout my career, I’ve partnered with financial institutions, SMEs, government agencies, national associations, NGOs, non-profit organizations, digital creators, and personal brands to deliver impactful solutions across Kenya and East Africa. My expertise extends beyond tech, blending entrepreneurial skills to create user-centric, business-relevant innovations. I’m passionate about working with visionary individuals and organizations, helping them navigate the ever-evolving technological landscape shaping our world today.
 				</p>
 			</div>
 			<div class="social-button-wrapper">
 				<div in:maskSlideIn={{ delay: 400, reverse: true }}>
-					<span class="button"><a href="mailto:musabhassan04@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>
+					<span class="button">
+						<a href="mailto:rimuikelvin4@gmail.com" target="_blank" class="clickable sublink link">
+							<img src="/assets/imgs/svg-icons/email.svg" alt="email" class="icon" style="height:30px">
+						</a>
+					</span>
 				</div>
 				<div in:maskSlideIn={{ delay: 700, reverse: true }}>
-					<span class="button"><a href="https://github.com/Musab-Hassan" target="_blank" class="clickable sublink link">Github</a></span>
+					<span class="button">
+						<a href="https://www.linkedin.com/in/rimui-kelvin-917b8b1a5/" target="_blank" class="clickable sublink link">
+						<img src="/assets/imgs/svg-icons/linkedin.svg" alt="LinkedIn" class="icon"style="height:30px">
+					</a>
+				</span>
 				</div>
 			</div>
 		</div>
 		<div class="profile-image" use:addSlickScrollOffset>
-			{#await loadImage("assets/imgs/profile-photo.jpg") then src}
+			{#await loadImage("assets/imgs/kelvin-photo.jpg") then src}
 				<img src="{src}" in:maskSlideIn={{ duration: 1200,
 					delay: 100,
 					reverse: true,
@@ -73,7 +82,7 @@
 						{ property: "width", value: "100%"},
 						{ property: "height", value: "100%"}
 					]
-				}} alt="Musab's Profile" class="profile-pic">
+				}} alt="Kelvin's Profile" class="profile-pic">
 			{/await}
 		</div>
 	{/await}
@@ -84,50 +93,46 @@
 		<ul class="list first">
 			<li class="list-title">
 				<div in:letterSlideIn={{ initDelay: 400 }}>
-					technical expertise
-				</div>
-			</li>
-			<li>
-				<div in:letterSlideIn={{ initDelay: 550 }}>
-					Front-end
-				</div>
-				<div 
-					class="flex-item" 
-					in:maskSlideIn={{ delay: 600 }}>
-					<img src="assets/imgs/svg-icons/svelte.svg" alt="Svelte">
-					<img src="assets/imgs/svg-icons/react.svg" alt="React">
-				</div>
-			</li>
-			<li>
-				<div in:letterSlideIn={{ initDelay: 650 }}>
-					Back-end
-				</div>
-				<div class="flex-item" in:maskSlideIn={{ delay: 700 }}>
-					<img src="assets/imgs/svg-icons/nodejs.svg" alt="node js">
-					<img src="assets/imgs/svg-icons/php.svg" alt="php">
-				</div>
-			</li>
-			<li>
-				<div in:letterSlideIn={{ initDelay: 750 }}>
-					Dev-ops
-				</div>
-				<div class="flex-item" in:maskSlideIn={{ delay: 800 }}>
-					<img src="assets/imgs/svg-icons/firebase.svg" alt="Firebase">
-					<img src="assets/imgs/svg-icons/gcp.svg" alt="Google Cloud Platform">
+					Experience
 				</div>
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 850 }}>
-					Mobile
+					<strong style="text-transform: none">Founder & CEO Alphatech Insights</strong>
 				</div>
 				<div class="flex-item" in:maskSlideIn={{ delay: 900 }}>
-					<img src="assets/imgs/svg-icons/flutter.svg" alt="flutter">
-					<img src="assets/imgs/svg-icons/android.svg" alt="native android">
-					<img src="assets/imgs/svg-icons/iOS.svg" alt="native ios">
+					August 2023 - Present
 				</div>
 			</li>
+			<li>
+				<div in:letterSlideIn={{ initDelay: 550 }}>
+				<strong style="text-transform: none">Head of ICT Benchmark Building Soluitons</strong>	
+				</div>
+				<div 
+					class="flex-item" 
+					in:maskSlideIn={{ delay: 600 }}>
+					January 2024 - Present
+				</div>
+			</li>
+			<li>
+				<div in:letterSlideIn={{ initDelay: 650 }}>
+					<strong style="text-transform: none">ICT coordinator Benchmark Building Soluitons</strong>
+				</div>
+				<div class="flex-item" in:maskSlideIn={{ delay: 700 }}>
+					January 2022 - January 2024
+				</div>
+			</li>
+			<li>
+				<div in:letterSlideIn={{ initDelay: 750 }}>
+					<strong style="text-transform: none">ICT Officer K-Unity SACCO</strong>
+				</div>
+				<div class="flex-item" in:maskSlideIn={{ delay: 800 }}>
+					April 2022 - December 2022
+				</div>
+			</li>
+			
 		</ul>
-		<ul class="list">
+		 <!--<ul class="list">
 			<li class="list-title">
 				<div in:letterSlideIn={{ initDelay: 400 }}>
 					awards
@@ -138,7 +143,7 @@
 					1x — Awwwards Honors
 				</div>
 			</li>
-		</ul>
+		</ul>-->
 	{/await}
 </div>
 

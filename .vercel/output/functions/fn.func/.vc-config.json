@@ -1,0 +1,10 @@
+{
+	"runtime": "nodejs20.x",
+	"handler": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Users\\KELVINS\\Desktop\\AlphaInsights\\AlphaTech Insights\\Our Website\\svelte Version\\rimui-kelvin\\.svelte-kit\\vercel-tmp\\index.js",
+	"launcherType": "Nodejs",
+	"experimentalResponseStreaming": true,
+	"framework": {
+		"slug": "sveltekit",
+		"version": "2.5.25"
+	}
+}

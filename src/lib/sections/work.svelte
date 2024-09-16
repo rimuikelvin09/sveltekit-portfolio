@@ -115,7 +115,7 @@
 		listContainer.style.transform = "translate3d(0px, 0px, 0px)";
 
 		// ThreeJS warping effect if device can handle it
-		if (gpuTier.tier >= 2 && !gpuTier.isMobile && gpuTier.fps! >= 30) new ImageRenderer(container, images);
+		//if (gpuTier.tier >= 2 && !gpuTier.isMobile && gpuTier.fps! >= 30) new ImageRenderer(container, images);
 	});
 
 	// Move slider to active item when it is active
@@ -368,7 +368,7 @@
 						width: 300%
 						margin: 0 10%
 						height: 1.5px
-						background-color: white
+						background-color: #ff9800
 
 			.mid-align	
 				display: flex
@@ -380,9 +380,9 @@
 					position: relative
 					font-family: $titleFont
 					font-size: 7vw
-					text-transform: lowercase
+					//text-transform: lowercase
 					font-weight: normal
-					word-wrap: break-word
+					word-wrap: normal
 					white-space: normal
 					line-height: 100%
 
@@ -424,7 +424,7 @@
 					flex-basis: 0
 
 				p
-					font-size: 1.3vh
+					font-size: 1.8vh
 					width: 65%
 
 				.roles 
@@ -495,7 +495,7 @@
 							height: 2px
 							bottom: 0
 							left: 0
-							background-color: white
+							background-color: #ff9800
 
 						div.line
 							display: none
@@ -568,7 +568,7 @@
 					left: 50%
 					transform: translate(-50%, -50%)
 					-webkit-transform: translate(-50%, -50%)
-					opacity: 0.5
+					opacity: 0.4
 
 			.text-top-wrapper
 				position: absolute
@@ -582,7 +582,7 @@
 				.item-index
 					font-size: 1vw
 					letter-spacing: 0.1vw
-					text-transform: uppercase
+					//text-transform: uppercase
 					font-family: $font
 
 			.text-wrapper
@@ -604,16 +604,17 @@
 
 				.item-title
 					font-family: $font
-					font-weight: normal
+					font-weight: bold
 					font-size: 2.5vw
 					z-index: 0
 					opacity: 1
 					letter-spacing: 0.1vw
 					line-height: 110%
 					word-spacing: 80vw
-					text-transform: lowercase
+					//text-transform: lowercase
 					word-wrap: break-word
 					white-space: normal
+					color: #212f3c
 
 
 				.inline-wrapper

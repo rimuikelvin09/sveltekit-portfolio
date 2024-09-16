@@ -1,7 +1,7 @@
 {
-	"name": "musabhassan.com",
+	"name": "alphainsights.co.ke",
 	"author": {
-		"name": "Musab Hassan"
+		"name": "Kelvin Rimui"
 	},
 	"version": "2.2.0",
 	"private": true,
@@ -26,6 +26,7 @@
 		"vite": "^5.0.12"
 	},
 	"dependencies": {
+		"@sveltejs/adapter-vercel": "^5.4.3",
 		"animejs": "^3.2.1",
 		"bezier-easing": "^2.1.0",
 		"detect-gpu": "^4.0.7",
