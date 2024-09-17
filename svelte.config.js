@@ -9,6 +9,9 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$lib: path.resolve('./src/lib')
+		},
+		files: {
+			assets: 'static'  // Point to your static folder
 		}
 	}
 };
