@@ -104,6 +104,7 @@
                     Monday - Friday <br> 8:30am - 4:30pm
                 </p>
         <a class="button large-text" bind:this={fullEmailLinkElement} href="mailto:rimuikelvin4@gmail.com" target="_blank">email me</a>
+        
     </div>
         
         <div class="credits-wrapper" bind:this={creditsElement}>
@@ -227,7 +228,7 @@
             white-space: nowrap
             color: #fafafa
 
-            .button
+    .button
             color: #fafafa
 
     .large-text
@@ -262,7 +263,7 @@
         stroke-dasharray: 180
         stroke-dashoffset: 180
 
-        .social-media-icons
+.social-media-icons
     display: flex
     justify-content: flex-end
     gap: 2vh
