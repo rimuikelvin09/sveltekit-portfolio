@@ -132,7 +132,7 @@ const options = {
 	<!-- SEO -->\r
 	<meta name="keywords" content="Kelvin, Rimui, Kelvin Rimui, Portfolio, ICT consultant, Designer, Website, Developer, Nairobi, Kenya, Nairobi Kenya, Kiambu, 09">\r
 	<meta name="author" content="Kelvin Rimui">\r
-	<meta http-equiv="content-type" content="text/html" charset="UTF-8">\r
+	\r
 	<meta name="description" content="Portfolio and personal website of Kelvin Rimui, an ICT consultant from Nairobi, Kenya.">\r
 \r
 	` + head + '\r\n</head>\r\n\r\n<body>\r\n	<div style="display: contents">\r\n		' + body + "\r\n	</div>\r\n</body>\r\n\r\n</html>",
@@ -207,7 +207,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1knjb12"
+  version_hash: "1gqa5g4"
 };
 async function get_hooks() {
   return {};

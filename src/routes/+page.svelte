@@ -72,7 +72,7 @@ onMount(async () => {
 
 <style lang="sass">
 
-@import "$lib/consts"
+@import "../lib/consts"
 
 :global(canvas)
 	position: absolute
