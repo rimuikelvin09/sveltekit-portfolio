@@ -48,7 +48,7 @@
 	{#await sectionOnePromise then _}
 		<div class="content-wrapper">
 			<h1 class="title" use:titleIn>
-				Meet <br>Kelvin 
+				Meet <br>Rimui
 			</h1>
 			<div in:maskSlideIn={{ duration: 1200, reverse: true, delay: 150 }}>
 				<p class="paragraph">
@@ -132,18 +132,33 @@
 			</li>
 			
 		</ul>
-		 <!--<ul class="list">
+		 <ul class="list">
 			<li class="list-title">
 				<div in:letterSlideIn={{ initDelay: 400 }}>
-					awards
+					Skills
 				</div>
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 550 }}>
-					1x — Awwwards Honors
+					Business Analysis
 				</div>
 			</li>
-		</ul>-->
+			<li>
+				<div in:letterSlideIn={{ initDelay: 600 }}>
+					Project Management
+				</div>
+			</li>
+			<li>
+				<div in:letterSlideIn={{ initDelay: 650 }}>
+					Full Stack Development
+				</div>
+			</li>
+			<li>
+				<div in:letterSlideIn={{ initDelay: 700 }}>
+					Customer Relations
+				</div>
+			</li>
+		</ul>
 	{/await}
 </div>
 
@@ -218,7 +233,7 @@
 				width: 10vw
 				right: 115%
 				top: 15%
-				background-color: white
+				background-color: #34495e
 				
 
 		.social-button-wrapper
@@ -266,9 +281,9 @@
 
 		li
 			font-family: $font
-			text-transform: uppercase
+			//text-transform: uppercase
 			font-size: 2vh
-			letter-spacing: 0.5vh
+			letter-spacing: none
 			padding: 2vh 0
 			border-bottom: 1px solid #444
 			display: flex

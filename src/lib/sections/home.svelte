@@ -108,7 +108,7 @@
 		<div class="flex">
 			<div class="flex-wrapper first">
 
-				<svg id="signature" class="h-signature" x="0px" y="0px" viewBox="0 0 56 56" style="stroke: rgb(255, 255, 255);">
+				<svg id="signature" class="h-signature" x="0px" y="0px" viewBox="0 0 56 56" style="stroke: rgb(178, 186, 187);">
 					<g>
 						<path
 						  bind:this={signaturePath1}

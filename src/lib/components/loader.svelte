@@ -67,7 +67,7 @@
     justify-content: center
     align-items: center
     z-index: 1000
-    background-color: #222224
+    background-color: #f39c12
 
     .loader-wrapper
         position: relative

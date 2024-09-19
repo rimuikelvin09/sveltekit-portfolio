@@ -81,7 +81,7 @@ onMount(async () => {
 	z-index: -1
 	
 :global(body)
-	background-color: #bdbdbd
+	background-color: #fdfefe
 	overflow: hidden
 	color: #212f3c
 	margin: 0

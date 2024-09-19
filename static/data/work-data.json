@@ -7,7 +7,13 @@
       "summary": "Web Application"
     },
     "date": "August 2024",
-    "roles": ["Brand Designer", "UI/UX Designer", "Full-Stack Web Developer"],
+    "roles": [
+      "Brand Development",
+      "ICT Administration",
+      "Website Development",
+      "Operational Process Design",
+      "Social Media Management"
+    ],
     "links": [
       {
         "type": "Web-app",
@@ -24,7 +30,7 @@
       "summary": "Business Portal"
     },
     "date": "Nov 2023",
-    "roles": ["Front-End Web Developer"],
+    "roles": ["Website Development"],
     "links": [
       {
         "type": "Web-app",
@@ -41,7 +47,7 @@
       "summary": "Web Application"
     },
     "date": "April 2022",
-    "roles": ["UI/UX Designer", "Front-end Web Developer"],
+    "roles": ["ICT Support", "Website Development", "ICT Product Testing"],
     "links": [
       {
         "type": "Web-app",
@@ -58,7 +64,7 @@
       "summary": "Web Application"
     },
     "date": "June 2023",
-    "roles": ["Brand Designer", "UI/UX Designer", "Full-Stack Web Developer"],
+    "roles": ["Brand Design", "Website Development", "ICT Support"],
     "links": [
       {
         "type": "Web-app",
@@ -75,7 +81,13 @@
       "summary": "E-commerce & CRM System"
     },
     "date": "August 2023",
-    "roles": ["UI/UX Designer", "Full-Stack Web Developer"],
+    "roles": [
+      "Website Development",
+      "ICT Administration",
+      "Social Media Management",
+      "Operational Process Design",
+      "ICT Solutions Analysis"
+    ],
     "links": [
       {
         "type": "Web-app",
@@ -92,7 +104,7 @@
       "summary": "E-commerce Website"
     },
     "date": "March 2023",
-    "roles": ["UI/UX Designer", "Full-Stack Web Developer"],
+    "roles": ["Website Development"],
     "links": [
       {
         "type": "E-commerce",

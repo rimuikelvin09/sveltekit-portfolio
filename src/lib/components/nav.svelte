@@ -59,7 +59,7 @@
 			<button class="interactive clickable"
 				on:click={() => navigate($homeAnchor)}>
 
-				<img src="assets/imgs/alphalogo.png"
+				<img src="assets/imgs/alphalogo-1.png"
 					class="logo-icon"
 					alt="Logo"
 					draggable="false"
@@ -184,7 +184,7 @@ button.interactive
 				button 
 					display: inline-block
 					cursor: pointer
-					color: white
+					color: #ff9800
 					font-size: inherit
 					font-family: inherit
 					letter-spacing: inherit
@@ -192,7 +192,7 @@ button.interactive
 
 				a
 					display: inline-block
-					color: white
+					color: #ff9800
 					text-decoration: none
 
 				&:not(.mobile):not(:last-child)::after
@@ -247,13 +247,13 @@ button.interactive
 					cursor: pointer
 					font-size: inherit
 					font-family: inherit
-					color: white
+					color: #ff9800
 					text-transform: inherit
 					font-weight: inherit
 
 				a
 					display: inline-block
-					color: white
+					color: #ff9800
 					cursor: pointer
 					text-decoration: none
 
@@ -294,11 +294,11 @@ button.interactive
 				right: 0
 				height: 2px
 				width: 100%
-				background-color: white
+				background-color: #ff9800	
 
 		&.mobileMenuActive
 			.text
-				color: white
+				color: #ff9800
 
 			.hb
 				row-gap: 0px

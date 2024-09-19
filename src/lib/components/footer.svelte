@@ -174,7 +174,7 @@
 
 .footer-wrapper
     width: 100vw
-    background-color: #212f3c
+    background-color: #34495e
     display: flex
     flex-direction: row
     justify-content: space-between
