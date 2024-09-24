@@ -654,6 +654,7 @@
 					width: calc(70vw - 10vh)
 
 					.item-title
-						font-size: 4.5vh
+						font-size: 4.0vh
+						
 
 </style>

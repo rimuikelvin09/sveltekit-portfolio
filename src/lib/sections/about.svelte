@@ -224,7 +224,7 @@
 			@media only screen and (max-width: 750px)
 				&
 					width: 100%
-					margin-left: 5vw
+					margin-left: 2vw
 
 			&::before
 				content: ""
