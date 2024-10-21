@@ -115,19 +115,19 @@
     <!-- Right side -->
 	<div class="flex-wrapper decor">
         <div class="social-media-icons">
-            <a href="https://facebook.com/yourprofile" target="_blank">
+            <a href="https://www.facebook.com/profile.php?id=100057993361993" target="_blank">
                 <img src="/assets/imgs/svg-icons/facebook.svg" alt="Facebook" class="icon">
             </a>
-            <a href="https://instagram.com/yourprofile" target="_blank">
+            <a href="https://www.instagram.com/rimui09" target="_blank">
                 <img src="/assets/imgs/svg-icons/instagram.svg" alt="Instagram" class="icon">
             </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+            <a href="https://www.linkedin.com/in/rimui-kelvin-917b8b1a5/" target="_blank">
                 <img src="/assets/imgs/svg-icons/linkedin.svg" alt="LinkedIn" class="icon">
             </a>
-            <a href="https://github.com/yourprofile" target="_blank">
+            <a href="https://github.com/rimuikelvin09" target="_blank">
                 <img src="/assets/imgs/svg-icons/github.svg" alt="GitHub" class="icon">
             </a>
-            <a href="https://github.com/yourprofile" target="_blank">
+            <a href="https://x.com/rimui09" target="_blank">
                 <img src="/assets/imgs/svg-icons/twitter.svg" alt="Twitter" class="icon">
             </a>
         </div>
