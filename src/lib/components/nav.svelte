@@ -59,7 +59,7 @@
 			<button class="interactive clickable"
 				on:click={() => navigate($homeAnchor)}>
 
-				<img src="assets/imgs/alphalogo-1.png"
+				<img src="assets/imgs/alphalogo.png"
 					class="logo-icon"
 					alt="Logo"
 					draggable="false"
@@ -149,8 +149,8 @@ button.interactive
 
 	.flex-wrapper.ico
 		overflow: hidden
-		height: 6vh
-		width: 7vh
+		height: 15vh
+		width: 15vh
 		mix-blend-mode: exclusion
 		cursor: pointer
 

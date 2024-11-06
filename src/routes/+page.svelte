@@ -106,7 +106,12 @@ onMount(async () => {
 
 #nav-bar
 	position: fixed
-	top: 10vh
+	//top: 10vh
 	z-index: 100
+	background-color: rgba(255, 255, 255, 0.7)  
+	backdrop-filter: blur(10px)  
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2)  
+	transition: background-color 0.3s ease, backdrop-filter 0.3s ease
+
 
 </style>

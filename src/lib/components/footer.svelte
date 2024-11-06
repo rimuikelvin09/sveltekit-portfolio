@@ -79,7 +79,7 @@
     <div class="flex-wrapper">
         <div class="logo-wrapper">
             <div class="inline-flex" bind:this={logoElement}>
-                <img src="assets/imgs/logo.svg" alt="mh logo" class="logo">
+                <img src="assets/imgs/alphalogo.png" alt="alpha logo" class="logo">
             </div>
         </div>
 

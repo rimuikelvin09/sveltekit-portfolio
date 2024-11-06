@@ -40,6 +40,23 @@
     ]
   },
   {
+    "id": "pba",
+    "title": "PostBank Kenya",
+    "details": {
+      "description": "We built a fully funtional mobile application and enabled mobile banking services",
+      "summary": "Mobile Application"
+    },
+    "date": "Nov 2023",
+    "roles": ["Mobile App development"],
+    "links": [
+      {
+        "type": "Mobile-App",
+        "text": "Visit Site",
+        "link": "https://postbank.co.ke/mobile-banking-2/"
+      }
+    ]
+  },
+  {
     "id": "unity",
     "title": "K-unity Sacco",
     "details": {
