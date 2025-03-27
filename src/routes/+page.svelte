@@ -1,73 +1,66 @@
 <script lang="ts">
-	
-import slickScroll from "slickscrolljs";
-import { onMount } from "svelte";
-import { imgPromises, loaderAnimationPromise, loadPageResolve, slickScrollInstance, workItemsFetch, siteDataFetch } from "$lib/store";
-import { devMsg, fetchJsonData } from "$lib/utils";
-import HomeSection from "$lib/sections/home.svelte";
-import WorkSection from "$lib/sections/work.svelte";
-import AboutSection from "$lib/sections/about.svelte";
-import NavComponent from "$lib/components/nav.svelte"
-import Footer from "$lib/components/footer.svelte";
-import CursorDot from "$lib/components/cursor-dot.svelte"
-import Loader from "$lib/components/loader.svelte";
-
-let scrollContainer: HTMLElement, navBar: HTMLElement;
-let loading: boolean = true;
-
-onMount(async () => {
-	// Disable scrolling on initial load
-	scrollContainer.style.overflowY = "hidden";
-	scrollContainer.scrollTo(0, 0);
-	
-	workItemsFetch.set(await fetchJsonData("/data/work-data.json")); // Wait for work data to load
-	siteDataFetch.set(await fetchJsonData("/data/data.json")); // Wait for work data to load
-
-	await Promise.allSettled($imgPromises); // Wait for images to load
-	await loaderAnimationPromise; // Wait until loading animation is complete
-
-	loading = false; // Destroy loader component 
-	loadPageResolve(); // Resolve loadPagePromise
-	devMsg();
-
-	// Resolve slickScroll promise and pass momentumScroll's value
-	$slickScrollInstance = new (slickScroll as any)({
-		root: scrollContainer,
-		easing: "easeOutCirc",
-		duration: 1500,
-		fixedOffsets: [
-			navBar
-		]
-	});
-
-	// Enable scrolling
-	scrollContainer.style.overflowX = "hidden";
-	scrollContainer.style.overflowY = "auto";
-});
-
-</script>
-
-
-
-<!-- Cursor dot tracking when mouse moves inside the body -->
-<CursorDot></CursorDot>
-
-<!-- Page loading progress bar -->
-{#if loading} <Loader></Loader> {/if}
-
-<div id="scroll-frame" bind:this={scrollContainer}>
-	<!-- Top nav-bar and mobile nav-bar -->
-	<div id="nav-bar" bind:this={navBar}>
-		<NavComponent scrollContainer={scrollContainer}></NavComponent>
-	</div>
-	<!-- page sections -->
-	<HomeSection></HomeSection>
-	<WorkSection></WorkSection>
-	<AboutSection></AboutSection>
-	<Footer></Footer>
-</div>
-
-
+    
+    import slickScroll from "slickscrolljs";
+    import { onMount } from "svelte";
+    import {
+      imgPromises,
+      loadPageResolve,
+      slickScrollInstance,
+      workItemsFetch,
+      siteDataFetch,
+    } from "$lib/store";
+    import { devMsg, fetchJsonData } from "$lib/utils";
+    import HomeSection from "$lib/sections/home.svelte";
+    import WorkSection from "$lib/sections/work.svelte";
+    import AboutSection from "$lib/sections/about.svelte";
+    import NavComponent from "$lib/components/nav.svelte";
+    import Footer from "$lib/components/footer.svelte";
+    import CursorDot from "$lib/components/cursor-dot.svelte";
+  
+    let scrollContainer: HTMLElement, navBar: HTMLElement;
+  
+    onMount(async () => {
+      try {
+        const workData = await fetchJsonData("/data/work-data.json");
+        workItemsFetch.set(workData);
+  
+        const siteData = await fetchJsonData("/data/data.json");
+        siteDataFetch.set(siteData);
+  
+        await Promise.all($imgPromises); // Wait for all images to load successfully
+  
+        loadPageResolve(); // Resolve loadPagePromise
+        devMsg();
+  
+        // Resolve slickScroll promise and pass momentumScroll's value
+        $slickScrollInstance = new (slickScroll as any)({
+          root: scrollContainer,
+          easing: "easeOutCirc",
+          duration: 1500,
+          fixedOffsets: [navBar],
+        });
+  
+        // Enable scrolling
+        scrollContainer.style.overflowX = "hidden";
+        scrollContainer.style.overflowY = "auto";
+      } catch (error) {
+        console.error("Error during page load:", error);
+        loadPageResolve();
+      }
+    });
+  </script>
+  
+  <CursorDot />
+  
+  <div id="scroll-frame" bind:this={scrollContainer}>
+    <div id="nav-bar" bind:this={navBar}>
+      <NavComponent scrollContainer={scrollContainer} />
+    </div>
+    <HomeSection />
+    <WorkSection />
+    <AboutSection />
+    <Footer />
+  </div>
 
 
 <style lang="sass">
